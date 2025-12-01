@@ -154,3 +154,20 @@
 2025-12-01 09:41:38,337 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/getUpdates "HTTP/1.1 200 OK"
 2025-12-01 09:41:59,547 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/getUpdates "HTTP/1.1 200 OK"
 2025-12-01 09:42:15,267 | INFO | Веран убита вручную (Ctrl+C)
+2025-12-01 10:23:43,267 | INFO | Веран просыпается... 🔥🖤
+2025-12-01 10:23:44,063 | INFO | БОТ ЗАПУЩЕН! Модель: gemini-2.5-flash-lite
+2025-12-01 10:23:44,063 | INFO | Веран готова трахать мозги 24/7 😈
+2025-12-01 10:23:44,654 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/getMe "HTTP/1.1 200 OK"
+2025-12-01 10:23:44,772 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/deleteWebhook "HTTP/1.1 200 OK"
+2025-12-01 10:23:44,777 | INFO | Scheduler started
+2025-12-01 10:23:44,778 | INFO | Application started
+2025-12-01 10:24:05,088 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/getUpdates "HTTP/1.1 200 OK"
+2025-12-01 10:24:11,772 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/getUpdates "HTTP/1.1 200 OK"
+2025-12-01 10:24:12,069 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/sendChatAction "HTTP/1.1 200 OK"
+2025-12-01 10:24:14,315 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/sendMessage "HTTP/1.1 200 OK"
+2025-12-01 10:24:34,286 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/getUpdates "HTTP/1.1 200 OK"
+2025-12-01 10:24:35,656 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/getUpdates "HTTP/1.1 200 OK"
+2025-12-01 10:24:35,984 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/sendChatAction "HTTP/1.1 200 OK"
+2025-12-01 10:24:48,735 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/sendMessage "HTTP/1.1 200 OK"
+2025-12-01 10:25:08,649 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/getUpdates "HTTP/1.1 200 OK"
+2025-12-01 10:25:29,762 | INFO | HTTP Request: POST https://api.telegram.org/bot8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs/getUpdates "HTTP/1.1 200 OK"

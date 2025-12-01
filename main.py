@@ -92,7 +92,6 @@ async def die(update: Update, context: ContextTypes.DEFAULT_TYPE):
     global RUNNING
     RUNNING = False
     await context.application.stop()
-    await context.application.updater.stop()
 
 
 def main() -> None:

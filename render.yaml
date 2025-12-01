@@ -13,3 +13,5 @@ services:
         sync: false
       - key: ADMIN_USER_IDS
         sync: false
+      - key: PYTHON_VERSION
+        value: 3.11.9
