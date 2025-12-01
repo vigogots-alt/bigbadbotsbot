@@ -4,3 +4,4 @@ pydub==0.25.1
 gTTS==2.5.3
 SpeechRecognition==3.10.4
 psutil==6.0.0
+pyaudioop
