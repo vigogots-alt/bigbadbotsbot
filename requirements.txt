@@ -5,3 +5,4 @@ gTTS==2.5.3
 SpeechRecognition==3.10.4
 psutil==6.0.0
 audioop-lts
+aifc
