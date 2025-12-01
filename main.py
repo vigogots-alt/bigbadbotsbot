@@ -16,8 +16,8 @@ from telegram.ext import (
 from telegram import Update
 from config import TELEGRAM_TOKEN, ADMIN_USER_IDS
 from handlers import (
-    start, clear, toggle_voice_response,
-    switch_model, handle_text, handle_voice
+    start, clear,
+    switch_model, handle_text
 )
 from state import get_current_model
 
@@ -108,12 +108,10 @@ def main() -> None:
     # ──────── ХЕНДЛЕРЫ ────────
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("clear", clear))
-    app.add_handler(CommandHandler("voice", toggle_voice_response))
     app.add_handler(CommandHandler("model", switch_model))
     app.add_handler(CommandHandler("status", status))      # ← только для тебя
     app.add_handler(CommandHandler("die", die))           # ← выключить бота
 
-    app.add_handler(MessageHandler(filters.VOICE, handle_voice))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
 
     # Глобальный обработчик ошибок

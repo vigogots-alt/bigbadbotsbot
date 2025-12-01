@@ -1,7 +1,7 @@
 # state.py — Улучшенная версия 2025 года
 # Добавлено: лимит истории, автосохранение в файл, перманентные метки жертв, быстрый доступ к компромату
 
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any
 from config import DEFAULT_MODEL, SYSTEM_PROMPT
 import json
 import os
@@ -50,7 +50,6 @@ def init_user(user_id: int) -> None:
         history[user_id] = deque([SYSTEM_PROMPT], maxlen=MAX_HISTORY_LENGTH)
     if user_id not in user_settings:
         user_settings[user_id] = {
-            "voice_response": False,
             "humiliation_level": 1,      # 1-5, для эскалации
             "edging_count": 0,           # сколько раз доводили до края
             "last_orgasm": None,         # timestamp последнего оргазма
@@ -81,17 +80,6 @@ def append_message(user_id: int, role: str, content: str) -> None:
 def get_history(user_id: int) -> List[dict]:
     init_user(user_id)
     return list(history[user_id])
-
-
-def toggle_voice(user_id: int) -> bool:
-    init_user(user_id)
-    user_settings[user_id]["voice_response"] = not user_settings[user_id]["voice_response"]
-    return user_settings[user_id]["voice_response"]
-
-
-def voice_enabled(user_id: int) -> bool:
-    init_user(user_id)
-    return user_settings[user_id]["voice_response"]
 
 
 def get_current_model() -> str:
@@ -143,7 +131,6 @@ def get_user_stats(user_id: int) -> dict:
     stats = {
         "messages_sent": len(history[user_id]) - 1,
         "humiliation_level": user_settings[user_id]["humiliation_level"],
-        "voice_enabled": user_settings[user_id]["voice_response"],
         "tags": get_tags(user_id),
         "last_orgasm": user_settings[user_id]["last_orgasm"],
     }
