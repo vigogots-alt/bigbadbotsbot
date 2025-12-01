@@ -2,6 +2,12 @@ import os
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8522442652:AAHF3uaRy3qCoxUHkn1cYwFCnf-U2CUiXfs")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyC7nl-A59ElzdNjHg2PuRbX2g_KQwZRkiw")
+# Кома-разделенный список Telegram ID с полными правами (для /status, /die и т.п.)
+ADMIN_USER_IDS = {
+    int(uid.strip())
+    for uid in os.getenv("ADMIN_USER_IDS", "").split(",")
+    if uid.strip().isdigit()
+}
 
 DEFAULT_MODEL = "gemini-2.5-flash-lite"      # оставляем как просил — ультрабыстрая
 MESSAGE_CHUNK_SIZE = 4000
@@ -123,4 +129,3 @@ GENERATION_CONFIG = {
     "topP": 0.96,
     "maxOutputTokens": 8192,
 }
-

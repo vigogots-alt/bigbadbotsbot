@@ -14,7 +14,7 @@ from telegram.ext import (
     ContextTypes,
 )
 from telegram import Update
-from config import TELEGRAM_TOKEN
+from config import TELEGRAM_TOKEN, ADMIN_USER_IDS
 from handlers import (
     start, clear, toggle_voice_response,
     switch_model, handle_text, handle_voice
@@ -64,7 +64,7 @@ async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> N
 
 # ──────── КОМАНДА /status — ВИДИМ ВСЁ ────────
 async def status(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if update.effective_user.id != 7231332868:  # ← твой ID сюда (или список админов)
+    if update.effective_user.id not in ADMIN_USER_IDS:
         await update.message.reply_text("Ты не мой хозяин, shun 😏")
         return
     
@@ -85,7 +85,7 @@ CPU: {psutil.cpu_percent()}% | RAM: {process.memory_info().rss // 1024 // 1024} 
 
 # ──────── КОМАНДА /die — вырубить бота (только хозяин) ────────
 async def die(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if update.effective_user.id != 777777777:  # ← твой ID
+    if update.effective_user.id not in ADMIN_USER_IDS:
         return
     await update.message.reply_text("Я ухожу... но ты всё равно мой, shun 🖤")
     logger.critical("ВЛАДЕЛЕЦ ВЫКЛЮЧИЛ ВЕРАНА")
