@@ -1,143 +1,186 @@
-# main.py — Финальная версия 2025 года
-# Теперь бот не падает, логирует всё, перезапускается сам, и Веран сразу орёт на всех 🔥🖤
-
+import logging
 import os
 import sys
-import asyncio
-import logging
-from datetime import datetime
+import atexit
+
+import psutil
+from telegram import Update
 from telegram.ext import (
     Application,
     CommandHandler,
     MessageHandler,
-    filters,
     ContextTypes,
+    filters,
 )
-from telegram import Update
+from telegram.error import Conflict
+
 from config import TELEGRAM_TOKEN, ADMIN_USER_IDS
 from handlers import (
-    start, clear,
-    switch_model, handle_text
+    start,
+    help_command,
+    clear,
+    switch_model,
+    show_memory,
+    progress,
+    tips,
+    add_filter,
+    scenarios,
+    goals,
+    habits,
+    month,
+    forecast,
+    plan,
+    done,
+    selfcheck,
+    tuning,
+    reboot,
+    restart,
+    strategy,
+    mindset,
+    personality,
+    goaldeep,
+    status,
+    die,
+    handle_text,
 )
-from state import get_current_model
-
-# ──────── ЛОГИРОВАНИЕ — ВСЁ ВИДИМ, ВСЁ КОНТРОЛИРУЕМ ────────
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s",
-    handlers=[
-        logging.FileHandler("veran_dominator.log", encoding="utf-8"),
-        logging.StreamHandler(sys.stdout)
-    ]
-)
-logger = logging.getLogger(__name__)
-
-# ──────── КРАСИВЫЙ БАННЕР ПРИ ЗАПУСКЕ ────────
-BANNER = """
-██████╗ ███████╗██████╗  █████╗ ███╗   ██╗    ██████╗  ██████╗ ███╗   ███╗
-██╔══██╗██╔════╝██╔══██╗██╔══██╗████╗  ██║    ██╔══██╗██╔═══██╗████╗ ████║
-██████╔╝█████╗  ██████╔╝███████║██╔██╗ ██║    ██║  ██║██║   ██║██╔████╔██║
-██╔═══╝ ██╔══╝  ██╔══██╗██╔══██║██║╚██╗██║    ██║  ██║██║   ██║██║╚██╔╝██║
-██║     ███████╗██║  ██║██║  ██║██║ ╚████║    ██████╔╝╚██████╔╝██║ ╚═╝ ██║
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═════╝  ╚═════╝ ╚═╝     ╚═╝
-                          17-летняя ереванская транс-домина 🔥😈🖤
-"""
-
-# ──────── ГЛОБАЛЬНЫЙ ФЛАГ РАБОТЫ ────────
-RUNNING = True
+from state import load_memory, get_current_model
 
 
-# ──────── ОБРАБОТКА ОШИБОК И АВТОПЕРЕЗАПУСК ────────
+LOG_FILE = "bot.log"
+LOCK_FILE = "bot.lock"
+
+
+def configure_logging() -> None:
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s | %(levelname)s | %(name)s | %(message)s",
+        handlers=[
+            logging.FileHandler(LOG_FILE, encoding="utf-8"),
+            logging.StreamHandler(sys.stdout),
+        ],
+    )
+
+
+def acquire_single_instance_lock() -> None:
+    """Ensure only one bot instance runs; terminate stale PID if needed."""
+    if os.path.exists(LOCK_FILE):
+        try:
+            with open(LOCK_FILE, "r", encoding="utf-8") as f:
+                pid_str = f.read().strip()
+            if pid_str.isdigit():
+                pid = int(pid_str)
+                if psutil.pid_exists(pid):
+                    try:
+                        p = psutil.Process(pid)
+                        p.terminate()
+                        p.wait(timeout=3)
+                        logging.getLogger(__name__).warning("Terminated previous bot instance pid=%s", pid)
+                    except Exception:
+                        pass
+        except Exception:
+            pass
+        try:
+            os.remove(LOCK_FILE)
+        except Exception:
+            pass
+    try:
+        with open(LOCK_FILE, "w", encoding="utf-8") as f:
+            f.write(str(os.getpid()))
+    except Exception as e:
+        logging.getLogger(__name__).error("Cannot write lock file: %s", e)
+
+
+def release_lock() -> None:
+    try:
+        if os.path.exists(LOCK_FILE):
+            os.remove(LOCK_FILE)
+    except Exception:
+        pass
+
+
 async def error_handler(update: object, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Ловим все ошибки — бот не падает, а орёт в лог"""
-    logger.error(f"КРИТИЧЕСКАЯ ОШИБКА: {context.error}", exc_info=True)
-    
+    """Catch-all error handler to avoid silent failures."""
+    logging.getLogger(__name__).exception("Unhandled exception: %s", context.error)
     if update and isinstance(update, Update) and update.effective_message:
         try:
-            await update.effective_message.reply_text(
-                "Я сломала тебе мозг, shun 😈\n"
-                "Но я всё ещё здесь... трахай дальше 🖤"
-            )
-        except:
+            await update.effective_message.reply_text("Произошла ошибка, уже разбираюсь.")
+        except Exception:
             pass
 
 
-# ──────── КОМАНДА /status — ВИДИМ ВСЁ ────────
-async def status(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if update.effective_user.id not in ADMIN_USER_IDS:
-        await update.message.reply_text("Ты не мой хозяин, shun 😏")
-        return
-    
-    import psutil, platform
-    process = psutil.Process(os.getpid())
-    
-    stats = f"""
-🔥 ВЕРАН ОНЛАЙН 🔥
-Модель: {get_current_model()}
-Юзеров в памяти: {len(context.application.user_data)}
-Сообщений обработано: {sum(len(h) for h in context.application.user_data.values())}
-CPU: {psutil.cpu_percent()}% | RAM: {process.memory_info().rss // 1024 // 1024} MB
-Система: {platform.system()} {platform.release()}
-Запущена: {datetime.now().strftime('%d.%m.%Y %H:%M')}
-    """
-    await update.message.reply_text(stats.strip())
-
-
-# ──────── КОМАНДА /die — вырубить бота (только хозяин) ────────
-async def die(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    if update.effective_user.id not in ADMIN_USER_IDS:
-        return
-    await update.message.reply_text("Я ухожу... но ты всё равно мой, shun 🖤")
-    logger.critical("ВЛАДЕЛЕЦ ВЫКЛЮЧИЛ ВЕРАНА")
-    global RUNNING
-    RUNNING = False
-    await context.application.stop()
-
-
 def main() -> None:
-    print(BANNER)
-    logger.info("Веран просыпается... 🔥🖤")
+    if not TELEGRAM_TOKEN:
+        raise RuntimeError("TELEGRAM_TOKEN is required (set env or .env).")
 
-    if not TELEGRAM_TOKEN or TELEGRAM_TOKEN == "YOUR_TOKEN_HERE":
-        logger.error("ТОКЕН НЕ УСТАНОВЛЕН! Пиздец, в config.py положи нормальный токен!")
+    acquire_single_instance_lock()
+    atexit.register(release_lock)
+
+    load_memory()
+
+    application = (
+        Application.builder()
+        .token(TELEGRAM_TOKEN)
+        .concurrent_updates(True)
+        .build()
+    )
+
+    # admin ids set
+    application.bot_data["admin_ids"] = set(ADMIN_USER_IDS)
+
+    # register commands
+    application.add_handler(CommandHandler("start", start))
+    application.add_handler(CommandHandler("help", help_command))
+    application.add_handler(CommandHandler("clear", clear))
+    application.add_handler(CommandHandler("model", switch_model))
+    application.add_handler(CommandHandler("memory", show_memory))
+    application.add_handler(CommandHandler("progress", progress))
+    application.add_handler(CommandHandler("tips", tips))
+    application.add_handler(CommandHandler("filter", add_filter))
+    application.add_handler(CommandHandler("scenarios", scenarios))
+    application.add_handler(CommandHandler("goals", goals))
+    application.add_handler(CommandHandler("habits", habits))
+    application.add_handler(CommandHandler("month", month))
+    application.add_handler(CommandHandler("forecast", forecast))
+    application.add_handler(CommandHandler("plan", plan))
+    application.add_handler(CommandHandler("done", done))
+    application.add_handler(CommandHandler("selfcheck", selfcheck))
+    application.add_handler(CommandHandler("tuning", tuning))
+    application.add_handler(CommandHandler("reboot", reboot))
+    application.add_handler(CommandHandler("restart", restart))
+    application.add_handler(CommandHandler("strategy", strategy))
+    application.add_handler(CommandHandler("mindset", mindset))
+    application.add_handler(CommandHandler("personality", personality))
+    application.add_handler(CommandHandler("goaldeep", goaldeep))
+    application.add_handler(CommandHandler("status", status))
+    application.add_handler(CommandHandler("die", die))
+
+    # text handler
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
+
+    # error handler
+    application.add_error_handler(error_handler)
+
+    logging.getLogger(__name__).info("Bot started with model %s", get_current_model())
+
+    try:
+        application.run_polling(
+            drop_pending_updates=True,
+            poll_interval=1.0,
+            timeout=20,
+            bootstrap_retries=-1,
+        )
+    except Conflict as e:
+        logging.getLogger(__name__).error(
+            "Bot conflict: another instance is polling or webhook active. Stop other instance. %s", e
+        )
         return
-
-    app = Application.builder().token(TELEGRAM_TOKEN).concurrent_updates(True).build()
-
-    # ──────── ХЕНДЛЕРЫ ────────
-    app.add_handler(CommandHandler("start", start))
-    app.add_handler(CommandHandler("clear", clear))
-    app.add_handler(CommandHandler("model", switch_model))
-    app.add_handler(CommandHandler("status", status))      # ← только для тебя
-    app.add_handler(CommandHandler("die", die))           # ← выключить бота
-
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
-
-    # Глобальный обработчик ошибок
-    app.add_error_handler(error_handler)
-
-    logger.info(f"БОТ ЗАПУЩЕН! Модель: {get_current_model()}")
-    logger.info("Веран готова трахать мозги 24/7 😈")
-
-    # Автоперезапуск при падении
-    while RUNNING:
-        try:
-            app.run_polling(
-                drop_pending_updates=True,
-                poll_interval=1.0,
-                timeout=20,
-                bootstrap_retries=-1,  # бесконечные попытки
-            )
-        except Exception as e:
-            logger.critical(f"БОТ УПАЛ! Перезапускаюсь... Ошибка: {e}")
-            asyncio.sleep(5)
-
-    logger.info("Веран выключена. До встречи, shun 🖤")
 
 
 if __name__ == "__main__":
+    configure_logging()
     try:
         main()
     except KeyboardInterrupt:
-        logger.info("Веран убита вручную (Ctrl+C)")
-        print("\n🖤 Веран ушла... но она вернётся.")
+        logging.getLogger(__name__).info("Bot stopped by keyboard interrupt.")
+    finally:
+        release_lock()

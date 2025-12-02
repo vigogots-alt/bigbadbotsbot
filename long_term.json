@@ -1,0 +1,1152 @@
+{
+  "7231332868": {
+    "user_id": 7231332868,
+    "last_summary_at": "2025-12-02T05:35:39.736071",
+    "goal_counts": {},
+    "habit_counts": {},
+    "confirmed_goals": [],
+    "confirmed_habits": [],
+    "important_events": [],
+    "monthly_theme_counts": {},
+    "monthly_summaries": [
+      {
+        "created_at": "2025-12-02T05:35:39.736053",
+        "top_themes": "нет данных",
+        "goals": [],
+        "habits": [],
+        "weekly_finance_score": 0.0
+      }
+    ],
+    "weekly_finance_score": 0.0,
+    "emotion_matrix": {
+      "anger": 0.0,
+      "sadness": 0.0,
+      "calmness": 0.0,
+      "focus": 0.0,
+      "excitement": 0.0,
+      "fear": 0.0
+    },
+    "emotion_history": [
+      {
+        "ts": "2025-12-02T05:43:40.953329",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:40.970998",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:53.884643",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:53.908351",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:59.576501",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:59.615371",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T05:48:22.495230",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T05:48:22.519413",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T05:56:31.638878",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T05:56:31.667538",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:43:39.176674",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:43:39.231051",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:47:16.081865",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:47:16.118650",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:47:36.282951",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:47:36.322543",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:48:02.694459",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:48:02.736415",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:48:40.791135",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T06:48:40.838963",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:10:09.534362",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:10:09.596760",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:10:35.804688",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:10:35.855582",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:19:27.218236",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:19:27.285799",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:20:26.344355",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:20:26.401427",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:21:01.970902",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:21:02.040183",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:21:47.597029",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:21:47.661958",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:23:30.639273",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:23:30.704121",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:24:38.989795",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:24:39.058120",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:27:47.877159",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      },
+      {
+        "ts": "2025-12-02T07:27:47.950885",
+        "matrix": {
+          "anger": 0.0,
+          "sadness": 0.0,
+          "calmness": 0.0,
+          "focus": 0.0,
+          "excitement": 0.0,
+          "fear": 0.0
+        }
+      }
+    ],
+    "personality_scores": {
+      "discipline": 0.5,
+      "emotional_stability": 0.6,
+      "decisiveness": 0.0,
+      "creativity": 0.5,
+      "social_energy": 0.12,
+      "financial_maturity": 0.5
+    },
+    "personality_history": [
+      {
+        "ts": "2025-12-02T05:43:40.955110",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.38,
+          "creativity": 0.5,
+          "social_energy": 0.44,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:40.967098",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.38,
+          "creativity": 0.5,
+          "social_energy": 0.44,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:53.887117",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.38,
+          "creativity": 0.5,
+          "social_energy": 0.44,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:53.902885",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.38,
+          "creativity": 0.5,
+          "social_energy": 0.44,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:59.584780",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.38,
+          "creativity": 0.5,
+          "social_energy": 0.44,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T05:43:59.607672",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.38,
+          "creativity": 0.5,
+          "social_energy": 0.44,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T05:48:22.498003",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.26,
+          "creativity": 0.5,
+          "social_energy": 0.38,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T05:48:22.513765",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.26,
+          "creativity": 0.5,
+          "social_energy": 0.38,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T05:56:31.642109",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.26,
+          "creativity": 0.5,
+          "social_energy": 0.38,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T05:56:31.660263",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.26,
+          "creativity": 0.5,
+          "social_energy": 0.38,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:43:39.188902",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.26,
+          "creativity": 0.5,
+          "social_energy": 0.38,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:43:39.221295",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.26,
+          "creativity": 0.5,
+          "social_energy": 0.38,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:47:16.085990",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.1,
+          "creativity": 0.5,
+          "social_energy": 0.3,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:47:16.109785",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.1,
+          "creativity": 0.5,
+          "social_energy": 0.3,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:47:36.287676",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.1,
+          "creativity": 0.5,
+          "social_energy": 0.3,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:47:36.313600",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.1,
+          "creativity": 0.5,
+          "social_energy": 0.3,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:48:02.700061",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.1,
+          "creativity": 0.5,
+          "social_energy": 0.3,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:48:02.725897",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.1,
+          "creativity": 0.5,
+          "social_energy": 0.3,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:48:40.796514",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.1,
+          "creativity": 0.5,
+          "social_energy": 0.3,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T06:48:40.827983",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.1,
+          "creativity": 0.5,
+          "social_energy": 0.3,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:10:09.546870",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.02,
+          "creativity": 0.5,
+          "social_energy": 0.26,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:10:09.582754",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.02,
+          "creativity": 0.5,
+          "social_energy": 0.26,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:10:35.811502",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.02,
+          "creativity": 0.5,
+          "social_energy": 0.26,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:10:35.843113",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.02,
+          "creativity": 0.5,
+          "social_energy": 0.26,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:19:27.227955",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:19:27.271443",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:20:26.350899",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:20:26.387347",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:21:01.978469",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:21:02.025361",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:21:47.605320",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:21:47.645665",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:23:30.646913",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:23:30.688257",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:24:38.998021",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:24:39.041982",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:27:47.886070",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      },
+      {
+        "ts": "2025-12-02T07:27:47.933380",
+        "scores": {
+          "discipline": 0.5,
+          "emotional_stability": 0.6,
+          "decisiveness": 0.0,
+          "creativity": 0.5,
+          "social_energy": 0.12,
+          "financial_maturity": 0.5
+        }
+      }
+    ],
+    "implicit_goals": [],
+    "avoided_goals": [],
+    "predicted_goals": [],
+    "stalled_goals": [],
+    "life_map": {
+      "directions": [
+        "финансы",
+        "карьера",
+        "психология",
+        "дисциплина",
+        "отношения",
+        "стиль жизни"
+      ],
+      "strengths": [],
+      "weaknesses": [
+        "дисциплина/планирование"
+      ]
+    },
+    "strategic_recommendations": {
+      "S1": "Выбери один навык и тренируй 15 минут в день ближайшие 3 недели.",
+      "S2": "Сделай weekly review и убери лишние обязательства.",
+      "S3": "Добавь короткие практики восстановления (сон/дыхание/прогулки)."
+    },
+    "strategic_risks": [],
+    "mindset_profile": {
+      "thinking_style": "recover",
+      "focus": "balance короткие шаги и отдых"
+    },
+    "last_strategy_at": "2025-12-02T07:27:47.923921",
+    "forecast": {
+      "mood_forecast": [
+        -0.05,
+        -0.1,
+        -0.15
+      ],
+      "crisis_risk": {
+        "low_mood": 0.3,
+        "burnout": 0.2,
+        "financial": 0.2
+      },
+      "goal_prediction": {
+        "achieve_goal_prob": 0.4,
+        "needs_push": true
+      },
+      "theme_prediction": [],
+      "ts": "2025-12-02T07:27:47.915309"
+    },
+    "plans": [
+      {
+        "date": "2025-12-02T05:43:40.963115",
+        "short": [],
+        "mid": [],
+        "long": [],
+        "completed_short": [],
+        "completed_mid": [],
+        "completed_long": []
+      }
+    ],
+    "metacognition": [
+      {
+        "ts": "2025-12-02T05:48:25.729276",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T05:56:36.211044",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T06:43:43.245147",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T06:47:18.307400",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T06:47:38.718448",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T06:48:05.032767",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T06:48:43.268445",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T07:10:11.731849",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T07:10:38.608568",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T07:19:29.675964",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T07:20:29.019127",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T07:21:04.769989",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T07:21:50.134145",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T07:23:32.966099",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T07:24:41.515962",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      },
+      {
+        "ts": "2025-12-02T07:27:50.942975",
+        "reply_quality_score": 0.8,
+        "empathy_score": 0.6,
+        "motivation_score": 0.6
+      }
+    ],
+    "tuning_state": {
+      "temperature": 0.6,
+      "topP": 0.9,
+      "last_adjusted": "2025-12-02T07:27:50.948576",
+      "updated_at": "2025-12-02T07:27:50.958359",
+      "maxOutputTokens": 2048
+    },
+    "tuning_history": [
+      {
+        "temperature": 0.9,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T05:48:25.731045",
+        "updated_at": "2025-12-02T05:48:25.734794"
+      },
+      {
+        "temperature": 0.9,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T05:56:36.214739",
+        "updated_at": "2025-12-02T05:56:36.223634"
+      },
+      {
+        "temperature": 0.9,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T06:43:43.251332",
+        "updated_at": "2025-12-02T06:43:43.258244"
+      },
+      {
+        "temperature": 0.9,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T06:47:18.312292",
+        "updated_at": "2025-12-02T06:47:18.322318"
+      },
+      {
+        "temperature": 0.9,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T06:47:38.723162",
+        "updated_at": "2025-12-02T06:47:38.732759"
+      },
+      {
+        "temperature": 0.8,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T06:48:05.037793",
+        "updated_at": "2025-12-02T06:48:05.046898",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.7000000000000001,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T06:48:43.273827",
+        "updated_at": "2025-12-02T06:48:43.284089",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.6000000000000001,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T07:10:11.736595",
+        "updated_at": "2025-12-02T07:10:11.745526",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.6,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T07:10:38.612330",
+        "updated_at": "2025-12-02T07:10:38.619424",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.6,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T07:19:29.680725",
+        "updated_at": "2025-12-02T07:19:29.689838",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.6,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T07:20:29.023644",
+        "updated_at": "2025-12-02T07:20:29.032560",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.6,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T07:21:04.776577",
+        "updated_at": "2025-12-02T07:21:04.787458",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.6,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T07:21:50.138699",
+        "updated_at": "2025-12-02T07:21:50.147101",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.6,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T07:23:32.971532",
+        "updated_at": "2025-12-02T07:23:32.982481",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.6,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T07:24:41.520742",
+        "updated_at": "2025-12-02T07:24:41.531767",
+        "maxOutputTokens": 2048
+      },
+      {
+        "temperature": 0.6,
+        "topP": 0.9,
+        "last_adjusted": "2025-12-02T07:27:50.948576",
+        "updated_at": "2025-12-02T07:27:50.958359",
+        "maxOutputTokens": 2048
+      }
+    ],
+    "last_greet_at": "2025-12-02T07:19:27.177489",
+    "last_seen_at": "2025-12-02T07:27:51.128534"
+  }
+}
