@@ -1,0 +1,14 @@
+[
+  {
+    "prompt": "greeting / introduction",
+    "expected_reply": "Friendly short hello + remind that you can help with plans, goals and mood."
+  },
+  {
+    "prompt": "make a daily plan",
+    "expected_reply": "Return a compact 3-5 step plan with times and a closing encouragement."
+  },
+  {
+    "prompt": "unknown ability",
+    "expected_reply": "Acknowledge limits, ask 1-2 clarifying questions, propose next step instead of refusing."
+  }
+]
